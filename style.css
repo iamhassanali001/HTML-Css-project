@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+nav .logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    justify-content: space-around;
+    
+}
+
+.hero {
+    text-align: center;
+    /* margin-top: 15%; */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.video-highlights, .features, .benefits, .collections, .clients, .tagging {
+    padding: 2rem;
+    text-align: center;
+}
+
+.video-highlights h2, .features h2, .benefits h2, .collections h2, .clients h2, .tagging h2 {
+    margin-bottom: 1rem;
+}
+
+.videos, .feature-list, .benefit-list, .collection-list, .client-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.video, .feature, .benefit, .collection, .client {
+    margin: 1rem;
+    flex: 1;
+    max-width: 30%;
+}
+
+.video img, .collection img, .client img, .supported-platforms img {
+    max-width: 100%;
+}
+
+.video p, .feature p, .benefit p {
+    margin: 0.5rem 0;
+}
+
+.video button, .tagging button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    background: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.supported-platforms {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.supported-platforms img {
+    margin: 0 1rem;
+}
+.tagging-2 {
+    text-align: center;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.benifit0, .benefit00, .b1{
+    text-align: center;
+    display: inline;
+    /* margin: 20px;
+    padding:20px; */
+}
+.hero{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+@media (max-width: 768px) {
+    /* nav ul {
+        flex-direction: column;
+    } */
+    .video, .feature, .benefit, .collection, .client {
+        max-width: 100%;
+    }
+}
+@media (max-width: 534px) {
+    nav ul {
+        /* flex-direction: column; */
+    }
+    .video, .feature, .benefit, .collection, .client {
+        /* max-width: 100%; */
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: row;
+        font-size: small;
+    }
+    .video, .feature, .benefit, .collection, .client.hero{
+        max-width: 100%;
+        font-size: small;
+    }
+}
